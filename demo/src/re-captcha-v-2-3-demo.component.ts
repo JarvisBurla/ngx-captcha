@@ -148,6 +148,7 @@ export class ReCaptchaV23DemoComponent implements OnInit, AfterViewInit {
     }
 
     // clean script to make sure siteKey is set correctly (because previous script could be incorrect)
+    //Can Recaptcha V2 and V3 Be Used on The Same Web Page? (RESOLVED)
     this.scriptService.cleanup();
 
     this.error = 'undefined';
