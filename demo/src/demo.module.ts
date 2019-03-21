@@ -10,6 +10,7 @@ import { InstallationComponent } from './installation.component';
 import { InvisibleReCaptchaDemoComponent } from './invisible-recaptcha-demo.component';
 import { ReCaptcha2DemoComponent } from './re-captcha-2-demo.component';
 import { ReCaptcha3DemoComponent } from './re-captcha-3-demo.component';
+import {ReCaptcha2And3DemoComponent} from "./re-captcha-2-and-3-demo.component";
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { ReCaptcha3DemoComponent } from './re-captcha-3-demo.component';
     InvisibleReCaptchaDemoComponent,
     ReCaptcha2DemoComponent,
     InstallationComponent,
-    ReCaptcha3DemoComponent
+    ReCaptcha3DemoComponent,
+    ReCaptcha2And3DemoComponent
   ],
 
   bootstrap: [DemoComponent]
