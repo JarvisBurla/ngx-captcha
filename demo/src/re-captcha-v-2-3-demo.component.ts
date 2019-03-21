@@ -12,61 +12,14 @@ declare var hljs: any;
 
 @Component({
   selector: 'ngx-recaptcha-v2-v3-demo',
-  templateUrl: './re-captcha-2-and-3-demo.component.html'
+  templateUrl: './re-captcha-v-2-3-demo.component.html'
 })
-export class ReCaptcha2And3DemoComponent implements OnInit, AfterViewInit {
+export class ReCaptchaV23DemoComponent implements OnInit, AfterViewInit {
 
   public readonly siteKey = '6LeN_5gUAAAAADd1SmMpRx9Ux44ruDomcdRQipFK';
 
-  public siteKeyV3?: string = '6Let_5gUAAAAANi3fdTLGzZzXIR1DKUc6EuV9Ev0';
-  public action?: string = 'homeTestPage';
   public token?: string;
   public error?: string;
-
-  public readonly installCode = `npm install ngx-captcha`;
-
-  public readonly importModuleCode = `
-import { NgModule } from '@angular/core';
-import { NgxCaptchaModule } from 'ngx-captcha';
-
-@NgModule({
-  imports: [
-    NgxCaptchaModule
-  })
-
-  export class AppModule { }`;
-
-  public readonly exampleCode = `<form [formGroup]="aFormGroup">
-  <ngx-recaptcha2 #captchaElem
-    [siteKey]="siteKey"
-    (reset)="handleReset()"
-    (expire)="handleExpire()"
-    (error)="handleError()"
-    (load)="handleLoad()"
-    (success)="handleSuccess($event)"
-    [useGlobalDomain]="false"
-    [size]="size"
-    [hl]="lang"
-    [theme]="theme"
-    [type]="type"
-    formControlName="recaptcha">
-  </ngx-recaptcha2>
-</form>
-`;
-
-  public readonly exampleTsCode = `class YourComponent implements OnInit {
-    public aFormGroup: FormGroup;
-
-    constructor(
-      private formBuilder: FormBuilder) {}
-
-    ngOnInit() {
-      this.aFormGroup = this.formBuilder.group({
-        recaptcha: ['', Validators.required]
-      });
-    }
-  }
-  `;
 
   public captchaIsLoaded = false;
   public captchaSuccess = false;

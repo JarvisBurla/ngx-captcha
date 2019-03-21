@@ -5,7 +5,7 @@ import { InstallationComponent } from './installation.component';
 import { InvisibleReCaptchaDemoComponent } from './invisible-recaptcha-demo.component';
 import { ReCaptcha2DemoComponent } from './re-captcha-2-demo.component';
 import { ReCaptcha3DemoComponent } from './re-captcha-3-demo.component';
-import {ReCaptcha2And3DemoComponent} from "./re-captcha-2-and-3-demo.component";
+import {ReCaptchaV23DemoComponent} from "./re-captcha-v-2-3-demo.component";
 
 @NgModule({
     declarations: [
@@ -28,7 +28,7 @@ import {ReCaptcha2And3DemoComponent} from "./re-captcha-2-and-3-demo.component";
                 path: 'recaptcha3', component: ReCaptcha3DemoComponent
             },
             {
-               path: 'recaptchaV2V3', component: ReCaptcha2And3DemoComponent
+               path: 'recaptcha-v2v3', component: ReCaptchaV23DemoComponent
             },
         ])
     ],
